@@ -1,0 +1,170 @@
+  html {
+    font-family: "Lucida Sans", sans-serif;
+  }
+  
+  .header {
+    background-color: #fff;
+    color: #ffffff;
+    padding: 15px;
+  }
+  
+  .aside {
+    background-color: #fff;
+    margin-top: -15px;
+    color: black;
+    text-align: left;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .footer {
+    background-color: #fff;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+  }
+  .footer li {
+      color: black;
+      display:inline-block;
+      cursor: pointer;
+  }
+  .footer li:hover {
+      color: blue
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .fab {
+      padding: 10px;
+      font-size: x-large;
+      cursor: pointer;
+  }
+  
+  .container {
+    position: relative;
+    color: black;
+  }
+  .centered {
+    font-size: medium;
+    font-weight: bold;
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+  .ndContainer {
+    position: relative;
+    color: black;
+  }
+  .ndCentered {
+    font-size: small;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    top: 25%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+  .rindCentered {
+    font-size: small;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    position: absolute;
+    top:75%; left: 25%; 
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+  .rindCentered .smText{
+      font-size: xx-small;
+  }
+  .items {
+    font-size: xx-small;
+    font-weight: bold;
+    color: black;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+  }
+  div .items p{
+   margin-bottom: 10px;
+  }
+  div .items p:hover{
+   font-size: large;
+  }
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+  
+  @media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+    .container .centered {font-size: xxx-large;}
+    .ndContainer .ndCentered {
+    font-size: x-large;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    }
+    .ndContainer .rindCentered {
+      left: 75%;
+      font-size: x-large;
+      text-align: center;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    }
+    .ndContainer .rindCentered .smText{
+    font-size: medium;
+    }
+    .header .items {
+    font-size: small;
+    top: 17%;
+    left: 5%;
+    }
+    .header .items p{
+    margin-bottom: 20px;
+    }
+  }
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+  }
+  @media only screen and (min-width: 980px) {
+    .aside {padding-left: 30%;}
+  }
